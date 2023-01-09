@@ -2,6 +2,7 @@
 
 use std::arch::x86_64::*;
 use core::simd::Simd;
+use std::mem::transmute;
 
 fn main() {
 
@@ -38,4 +39,10 @@ fn main() {
 
     let all_floats_2: &[f32; 4] = all_floats.as_array();
     println!("s: {:?}", all_floats_2);
+
+    let all_floats_3 = unsafe {
+        transmute::<__m128, [f32;4]>(s);
+    };
+
+    println!("s: {:?}", all_floats_3);
 }
