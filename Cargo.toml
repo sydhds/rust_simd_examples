@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "simd_01_sse_basic",
+    "simd_02_avx_basic",
+]
+resolver = "2"
