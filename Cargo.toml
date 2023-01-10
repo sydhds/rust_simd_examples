@@ -2,5 +2,6 @@
 members = [
     "simd_01_sse_basic",
     "simd_02_avx_basic",
+    "simd_03_intrinsics",
 ]
 resolver = "2"

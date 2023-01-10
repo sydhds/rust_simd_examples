@@ -16,6 +16,9 @@ fn main() {
     // Intel documentation:
     // https://www.intel.com/content/www/us/en/docs/intrinsics-guide/index.html#text=_mm_add_ps
 
+    // Another good ref:
+    // https://www.felixcloutier.com/x86/index.html
+
     let s = unsafe {
 
         // __m128: Four f32 types
