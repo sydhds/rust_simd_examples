@@ -3,5 +3,6 @@ members = [
     "simd_01_sse_basic",
     "simd_02_avx_basic",
     "simd_03_intrinsics",
+    "simd_05_grayscale",
 ]
 resolver = "2"
